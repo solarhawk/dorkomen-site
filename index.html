@@ -196,51 +196,11 @@
 
           </div>
 <!-- Replace your <figure> with this canvas -->
-          <canvas id="hero-canvas" width="700" height="700"></canvas>
-
-          <script>
-          const canvas = document.getElementById('hero-canvas');
-          const ctx = canvas.getContext('2d');
-
-          const particleCount = 100;
-          const centerX = canvas.width / 2;
-          const centerY = canvas.height / 2;
-          const radius = 200;
-          const thickness = 50;
-          let rotationAngle = 0; // This will increment to create rotation
-
-          function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            
-            // Increment rotation angle for continuous spinning
-            rotationAngle += 0.01;
-            
-            // Draw particles in a rotating ring
-            for (let j = 0; j < particleCount; j++) {
-              const angle = (j / particleCount) * Math.PI * 2 + rotationAngle;
-              const radiusVariation = radius + (Math.random() - 0.5) * thickness;
-              
-              const x = Math.cos(angle) * radiusVariation + centerX;
-              const y = Math.sin(angle) * radiusVariation + centerY;
-              
-              const hue = (j / particleCount) * 360;
-              const size = Math.random() * 12 + 8;
-              
-              ctx.fillStyle = `hsl(${hue}, 100%, 60%)`;
-              ctx.beginPath();
-              ctx.arc(x, y, size, 0, Math.PI * 2);
-              ctx.fill();
-            }
-            
-            requestAnimationFrame(animate);
-          }
-
-          animate();
-          </script>
-          <!-- <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+          
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
             <img src="./assets/images/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
           </figure>
-        -->
+      
         </div>
       </section>
 
