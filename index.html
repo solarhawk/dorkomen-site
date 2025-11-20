@@ -196,47 +196,47 @@
 
           </div>
 <!-- Replace your <figure> with this canvas -->
-      <canvas id="hero-canvas" width="700" height="700"></canvas>
+          <canvas id="hero-canvas" width="700" height="700"></canvas>
 
-      <script>
-      const canvas = document.getElementById('hero-canvas');
-      const ctx = canvas.getContext('2d');
+          <script>
+          const canvas = document.getElementById('hero-canvas');
+          const ctx = canvas.getContext('2d');
 
-      const particleCount = 100;
-      const particles = [];
+          const particleCount = 100;
+          const centerX = canvas.width / 2;
+          const centerY = canvas.height / 2;
+          const radius = 200;
+          const thickness = 50;
+          let rotationAngle = 0; // This will increment to create rotation
 
-      // Initialize particles
-      for (let j = 0; j < particleCount; j++) {
-        const angle = (j / particleCount) * Math.PI * 2;
-        const radius = 200;
-        const thickness = 50;
-        const radiusVariation = radius + (Math.random() - 0.5) * thickness;
-        
-        particles.push({
-          x: Math.cos(angle) * radiusVariation + canvas.width / 2,
-          y: Math.sin(angle) * radiusVariation + canvas.height / 2,
-          hue: j / particleCount,
-          size: Math.random() * 12 + 8
-        });
-      }
+          function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            // Increment rotation angle for continuous spinning
+            rotationAngle += 0.01;
+            
+            // Draw particles in a rotating ring
+            for (let j = 0; j < particleCount; j++) {
+              const angle = (j / particleCount) * Math.PI * 2 + rotationAngle;
+              const radiusVariation = radius + (Math.random() - 0.5) * thickness;
+              
+              const x = Math.cos(angle) * radiusVariation + centerX;
+              const y = Math.sin(angle) * radiusVariation + centerY;
+              
+              const hue = (j / particleCount) * 360;
+              const size = Math.random() * 12 + 8;
+              
+              ctx.fillStyle = `hsl(${hue}, 100%, 60%)`;
+              ctx.beginPath();
+              ctx.arc(x, y, size, 0, Math.PI * 2);
+              ctx.fill();
+            }
+            
+            requestAnimationFrame(animate);
+          }
 
-      // Animation loop (runs continuously)
-      function animate() {
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-        
-        // Draw particles
-        particles.forEach(particle => {
-          ctx.fillStyle = `hsl(${particle.hue * 360}, 100%, 60%)`;
-          ctx.beginPath();
-          ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-          ctx.fill();
-        });
-        
-        requestAnimationFrame(animate); // This makes it loop continuously
-      }
-
-      animate(); // Start the animation
-      </script>
+          animate();
+          </script>
           <!-- <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
             <img src="./assets/images/hero-banner.png" width="700" height="700" alt="hero banner" class="w-100">
           </figure>
