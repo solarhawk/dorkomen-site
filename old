@@ -1,9 +1,0 @@
-name = "gamics"
-compatibility_date = "2025-11-19"
-pages_build_output_dir = "./"
-
-[build]
-command = ""
-
-[site]
-bucket = "./"
