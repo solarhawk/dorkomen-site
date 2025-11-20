@@ -4,10 +4,6 @@ Gamics - Create Manage Matches
 
 #---------- HEDER ----------#
 
-Exclusive Black Friday ! Offer 
-10 
-Days
-
 Follow us on :
 
 <ion-icon name="logo-facebook"></ion-icon>
@@ -15,11 +11,9 @@ Follow us on :
 <ion-icon name="logo-pinterest"></ion-icon>
 <ion-icon name="logo-linkedin"></ion-icon>
 
-Gamics
+Dork Omen Games
 
 Home
-Live
-Features
 Shop
 Blog
 Contact
@@ -65,13 +59,6 @@ Read More
 alt = hero banner
 
 
-
-#---------- BRAND ----------#
-
-alt = brand logo
-
-
-
 #---------- LATEST GAME ----------#
 
 Latest Releases
@@ -105,25 +92,6 @@ Action
 Cyberpunk
 Daily
 
-
-
-#---------- LIVE MATCH ----------#
-
-Watch Live 
-Match
-
-alt = Live Match Video
-
-aria-label = play video
-<ion-icon name="play"></ion-icon>
-
-alt = tokyo eagle
-
-Upcoming Live Matches
-
-08:30
-
-alt = new york hunter7
 
 
 
