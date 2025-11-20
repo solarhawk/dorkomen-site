@@ -73,7 +73,7 @@
    * spacing
    */
 
-  /* --section-padding: 120px;*/
+  --section-padding: 120px;
 
   /**
    * gradient
@@ -503,7 +503,7 @@ body {
 
 .hero {
   --section-padding: 60px;
-  margin-block-start: 84px;
+  margin-block-start: 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
