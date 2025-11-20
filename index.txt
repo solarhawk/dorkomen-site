@@ -205,25 +205,25 @@ Articles
 
 Compete With 100 Players On A Remote Island For Winner Takes Showdown Known Issue Where Certain Skin Strategic
 
-alt = Shooter Action Video
+alt = Moreck Falls
 
 <ion-icon name="person-outline"></ion-icon>
 Admin
 
 <ion-icon name="calendar-outline"></ion-icon>
-September 19, 2022
+December 25, 2025
 
-Shooter Action Video
+Moreck Falls
 
-Compete With 100 Players On A Remote Island Thats Winner Takes Showdown Known Issue.
+The tragedy of Yeoj Moreck.  The beginning of his journey into another world. 
 
 Read More
 
 <ion-icon name="caret-forward"></ion-icon>
 
-alt = The Walking Dead
+alt = Moreck Rises
 
-alt = Defense Of The Ancients
+alt = The Moreck Chronicles
 
 
 
@@ -243,18 +243,17 @@ Subscribe
 
 #---------- FOOTER ----------#
 
-Gamics
+Dork Omen Games
 
-Gamics marketplace the relase etras thats sheets continig passag.
 
 <ion-icon name="location"></ion-icon>
-Address : PO Box W75 Street lan West new queens
+Address : <<<Insert Later>>>
 
 <ion-icon name="headset"></ion-icon>
-Phone : +24 1245 654 235
+Phone : +1 360 797 2485
 
 <ion-icon name="mail-open"></ion-icon>
-Email : info@exemple.com
+Email : admin@dorkomen.io
 
 Products
 
